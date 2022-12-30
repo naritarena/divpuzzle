@@ -17,31 +17,29 @@ body {
   position: relative;
 }
 .nav {
- float: left;
+	
  background: #ffffff;
  
  position: absolute;right:20px;top:20px;
  
  }
+ 
+ 
 
- .nav-left,.nav-center,.nav-right {
-  float: left;
+.nav-box {
+	float: left;
   
   width: 40px;
   height: 40px;
 background: #a9004b;
- }
- .nav-left {
-  margin: 10px 5px 10px 10px;
- }
- .nav-center {
-  margin: 10px 5px 10px 5px;
- }
- .nav-right {
-  margin: 10px 10px 10px 5px;
- }
+margin-right: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
 
-
+}
+.nav-box:nth-child(1) {
+	margin-left: 10px;
+}
 .side {
 	
   float: left;
@@ -61,18 +59,16 @@ background: #a9004b;
  
 }
 
-.content-top,.content-center,.content-bottom {
+.content-box {
   float: left;
   width: 140px;
   height: 40px;
   background: #ff863f;
   border:solid 5px #ffffff;
+	margin-bottom: 10px;
 }
 
-.content-center {
-  margin:10px 0px;
- 
-}
+
 
 .footer {
 	width: 100%;
