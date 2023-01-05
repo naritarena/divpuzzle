@@ -14,14 +14,12 @@ body {
 	position: relative;
  
 }
-/* .header-nav {
-  position: relative;
-} */
+
 .nav {
 	
  background: #ffffff;
  
- position: absolute;right:20px;top:20px;
+ position: absolute;right:20px;top:20px;padding: 10px;
  
  }
  
@@ -29,18 +27,13 @@ body {
 
 .nav-box {
 	float: left;
-  
   width: 40px;
   height: 40px;
 background: #a9004b;
-margin-left: 10px;
-/* margin-top: 10px;
-margin-bottom: 10px; */
-
 }
-/* .nav-box:nth-child(1) {
+.nav-box:nth-child(n+2) {
 	margin-left: 10px;
-} */
+}
 .side {
 	
   float: left;
@@ -51,7 +44,7 @@ margin-bottom: 10px; */
 .main {
 	float: left;
 }
-/* ↑これを入れるとfooterが消える */
+
 .content {
 	float: left;
 	width: 250px;
@@ -65,14 +58,14 @@ margin-bottom: 10px; */
 }
 
 .content-box {
-  /* float: left; */
+  
   width: 140px;
   height: 40px;
   background: #ff863f;
   border:solid 5px #ffffff;
 	margin-bottom: 10px;
 }
-/* ↓は付け加えました。 */
+
 .content-box:nth-child(3) {
 	margin-bottom: -10px;
 }
