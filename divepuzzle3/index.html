@@ -13,7 +13,7 @@
 <div class="wrapper">
   
   <div class="header">
-   
+    <!-- ↓＊１に移動clearfixの位置が違う。横並びする親要素に適応してください -->
   <div class="nav clearfix">
     
     <div class="nav-box">
@@ -26,11 +26,12 @@
 </div>
 
   </div> 
+  <div class="clearfix">
   <div class="side">
   </div>
   <div class="main">
-   
-    <div class="content">
+   <!-- ↓contentに記載している内容はmainに記載してcontentの階層を一つ少なくしてください。div class="content"を削除？ -->
+    <!-- <div class="content"> -->
       <div class="content2">
       <div class="content-box">
       </div>
@@ -42,10 +43,12 @@
     </div>
   
  
-  </div>
-  <div class="clearfix"></div>
+  <!-- </div> -->
+</div>
+
   <div class="footer">
- 
+    <!-- <div class="clearfix"></div>
+    ↑＊１に移動clearfixの位置が違う。横並びする親要素に適応してください -->
   </div>
 
 </div>
