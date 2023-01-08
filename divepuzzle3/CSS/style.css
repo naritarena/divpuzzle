@@ -41,20 +41,25 @@ background: #a9004b;
 	height: 250px;
 	background: #00ff51;
 }
+/*↓ .contentに記載していたcssコードをmainに記載。 */
 .main {
-	float: left;
-}
-
-.content {
 	float: left;
 	width: 250px;
 	height: 250px;
 	background: #8e2727;
   position: relative;
 }
+/* <!-- ↓contentに記載している内容はmainに記載してcontentの階層を一つ少なくしてください。div class="content"を削除？ --> */
+/* .content {
+	float: left;
+	width: 250px;
+	height: 250px;
+	background: #8e2727;
+  position: relative;
+} */
 .content2 {
   position: absolute;top:40px;left:40px;
- 
+ /* background-color: #00ff51; ←marginがどこにかかっているかの確認用*/
 }
 
 .content-box {
@@ -65,9 +70,11 @@ background: #a9004b;
   border:solid 5px #ffffff;
 	margin-bottom: 10px;
 }
-
+/* ↑↓【疑問】content-boxの３番目の要素はmargin:0にしてください。また疑似要素おそらく下のnth-childで３番目のみを適応していますが、
+　　追加コンテンツなどあった際にCSSを書き直す必要があるため、最後の要素に適応する疑似要素の書き方に変えてください */
 .content-box:nth-child(3) {
 	margin-bottom: -10px;
+	
 }
 
 .footer {
